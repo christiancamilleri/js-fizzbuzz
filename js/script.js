@@ -16,4 +16,21 @@ for (let i = 1; i <= 100; i++) {
     newElement.style.border = "1px solid Red";
 
     console.log(newElement)
+
+    if(i % 3 == 0) {
+        newElement.innerHTML = "Fizz";
+        newElement.style.backgroundColor = "#fd00cf" ;
+    }
+
+    if(i % 5 == 0) {
+        newElement.innerHTML = "Buzz";
+        newElement.style.backgroundColor = "#5700f0" ;
+
+    }
+
+    if(i % 3 == 0 &&  i % 5 == 0) {
+        newElement.innerHTML = "Fizz-Buzz";
+        newElement.style.backgroundColor = "#0601f0" ;
+
+    }
 }
