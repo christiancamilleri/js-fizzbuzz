@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: chartreuse;
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+#container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+
+
+    /* test */
+    
+    background-color: chartreuse;
+}
+
+#container div {
+    width: calc(100% / 8 - (1em / 6));
+    height: 120px;
+    border: solid 1px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 1em 0;
+}
