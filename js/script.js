@@ -11,9 +11,9 @@ for (let i = 1; i <= 100; i++) {
     // dico a newElement di essere figlio di #container
     containerEl.append(newElement);
 
-    newElement.innerHTML = i;
+    newElement.style.backgroundColor = "yellow";
 
-    newElement.style.border = "1px solid Red";
+    newElement.style.border = "1px solid darkgreen";
 
     console.log(newElement)
 
@@ -23,14 +23,13 @@ for (let i = 1; i <= 100; i++) {
     }
 
     if(i % 5 == 0) {
-        newElement.innerHTML = "Buzz";
+        newElement.innerHTML += "Buzz";
         newElement.style.backgroundColor = "#5700f0" ;
 
     }
 
-    if(i % 3 == 0 &&  i % 5 == 0) {
-        newElement.innerHTML = "Fizz-Buzz";
-        newElement.style.backgroundColor = "#0601f0" ;
+    if(newElement.innerText == "") {
+       newElement.innerHTML = i;
 
     }
 }
